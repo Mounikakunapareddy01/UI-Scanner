@@ -1,38 +1,328 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #040f23 0%, #e2eafc 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sample-app {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header ~ Navigation */
+.navbar {
+  background: #0b0b0c;
+  color: #fff;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding: 1.2em 2em;
+  gap: 22px;
+  letter-spacing: 1px;
+}
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-right: auto;
+  letter-spacing: 2px;
+}
+.nav-link {
+  color: #e7ecef;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 18px;
+  transition: color 0.2s;
+  border-bottom: 2px solid transparent;
+}
+.nav-link:hover {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: #e2eafc;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 2em 4em;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.hero-image {
+  max-height: 180px;
+  width: auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #29346255;
+  margin-right: 30px;
+}
+.hero-content {
+  max-width: 500px;
+}
+.hero-content h1 {
+  font-size: 2.2em;
+  margin: 0 0 12px 0;
+  color: #293462;
+}
+.hero-content p {
+  font-size: 1.18em;
+  margin-bottom: 22px;
+  color: #22223b;
+}
+.cta-btn {
+  font-size: 1em;
+  background: #293462;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 32px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.15s;
+  box-shadow: 0 2px 10px #22223b22;
+}
+.cta-btn:hover {
+  background: #ffd700;
+  color: #293462;
+}
+
+/* Card Section */
+.cards-section {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 3em 0;
+  gap: 32px;
+}
+.card {
+  background: #904747;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px #29346209;
+  padding: 1.4em 1em;
+  width: 220px;
+  text-align: center;
+  margin: 0 6px;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px #29346233;
+}
+.card img {
+  width: 120px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.card h2 {
+  color: #3f72af;
+  font-size: 1.1em;
+  margin-bottom: 7px;
+}
+.card p {
+  font-size: 0.97em;
+  color: #222;
 }
 
-.App-link {
-  color: #61dafb;
+/* About Section */
+.about-section {
+  margin: 3em auto 4em auto;
+  max-width: 620px;
+  text-align: center;
+  background: #1a1d24;
+  padding: 1.7em 1em;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #22223b14;
+}
+.about-section h2 {
+  margin-bottom: 10px;
+  color: #293462;
+}
+.about-section p {
+  color: #22223b;
+  font-size: 1.13em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Footer */
+.footer {
+  background: #293462;
+  color: #fff;
+  padding: 2.6em 1em 1.2em 1em;
+  text-align: center;
+  font-size: 1em;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  margin-top: 7em;
+}
+.footer-link {
+  color: #ffd700;
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.97em;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #edf2fb 0%, #e2eafc 100%);
+}
+
+.sample-app {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+}
+
+/* Header ~ Navigation */
+.navbar {
+  background: #293462;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1.2em 2em;
+  gap: 22px;
+  letter-spacing: 1px;
+}
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-right: auto;
+  letter-spacing: 2px;
+}
+.nav-link {
+  color: #e7ecef;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 18px;
+  transition: color 0.2s;
+  border-bottom: 2px solid transparent;
+}
+.nav-link:hover {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: #e2eafc;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 2em 4em;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.hero-image {
+  max-height: 180px;
+  width: auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #29346255;
+  margin-right: 30px;
+}
+.hero-content {
+  max-width: 500px;
+}
+.hero-content h1 {
+  font-size: 2.2em;
+  margin: 0 0 12px 0;
+  color: #293462;
+}
+.hero-content p {
+  font-size: 1.18em;
+  margin-bottom: 22px;
+  color: #22223b;
+}
+.cta-btn {
+  font-size: 1em;
+  background: #293462;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 32px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.15s;
+  box-shadow: 0 2px 10px #22223b22;
+}
+.cta-btn:hover {
+  background: #ffd700;
+  color: #293462;
+}
+
+/* Card Section */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  padding: 3em 0;
+  gap: 32px;
+}
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px #29346209;
+  padding: 1.4em 1em;
+  width: 220px;
+  text-align: center;
+  margin: 0 6px;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px #29346233;
+}
+.card img {
+  width: 120px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.card h2 {
+  color: #3f72af;
+  font-size: 1.1em;
+  margin-bottom: 7px;
+}
+.card p {
+  font-size: 0.97em;
+  color: #222;
+}
+
+/* About Section */
+.about-section {
+  margin: 3em auto 4em auto;
+  max-width: 620px;
+  text-align: center;
+  background: #e2eafc;
+  padding: 1.7em 1em;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #22223b14;
+}
+.about-section h2 {
+  margin-bottom: 10px;
+  color: #293462;
+}
+.about-section p {
+  color: #22223b;
+  font-size: 1.13em;
+}
+
+/* Footer */
+.footer {
+  background: #293462;
+  color: #fff;
+  padding: 2.6em 1em 1.2em 1em;
+  text-align: center;
+  font-size: 1em;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  margin-top: 7em;
+}
+.footer-link {
+  color: #ffd700;
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.97em;
+}
+.footer-link:hover {
+  text-decoration: underline;
 }
